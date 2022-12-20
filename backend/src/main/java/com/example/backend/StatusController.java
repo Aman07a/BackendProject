@@ -10,4 +10,12 @@ public class StatusController {
 	public String status() {
 		return "OK";
 	}
+	
+	@RequestMapping(value = "person")
+	public Person person() {
+		Person p = new Person();
+		p.setFirstName("Aman");
+		p.setLastName("Ahmed");
+		return p;
+	}
 }
